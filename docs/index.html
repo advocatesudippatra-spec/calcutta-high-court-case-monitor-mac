@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calcutta High Court Case Monitor for Mac</title>
+<meta name="description" content="Free Mac app for advocates: Calcutta High Court cause-list analysis, live display board watcher, Telegram and phone alarms, AI assistant. By Patra's Law Chambers.">
+<meta property="og:title" content="Calcutta High Court Case Monitor for Mac">
+<meta property="og:description" content="Your cause list, the live display board and every alert, right in your Mac's menu bar. Free, by Patra's Law Chambers.">
+<meta property="og:image" content="https://advocatesudippatra-spec.github.io/calcutta-high-court-case-monitor-mac/img/social-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #0a1226; --panel: #111b33; --line: rgba(255,255,255,.09); --fg: #e8ecf5; --mut: #9fabc4; --gold: #e0b560; --gold2: #c99a3e; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 Inter, -apple-system, system-ui, sans-serif; }
+  a { color: var(--gold); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+  header { background: radial-gradient(900px 500px at 75% 20%, rgba(214,170,90,.16), transparent 60%), linear-gradient(160deg, #0d1934, #0a1226 60%); padding: 28px 0 40px; border-bottom: 1px solid var(--line); }
+  nav { display: flex; align-items: center; gap: 12px; font-size: 14px; }
+  nav img { width: 34px; height: 34px; }
+  nav b { letter-spacing: .12em; text-transform: uppercase; color: var(--gold); font-size: 13px; }
+  nav .sp { flex: 1; }
+  nav a { color: var(--mut); text-decoration: none; margin-left: 14px; }
+  .hero img { width: 100%; border-radius: 16px; margin-top: 26px; box-shadow: 0 30px 80px rgba(0,0,0,.5); display: block; }
+  .cta { text-align: center; margin: 34px 0 6px; }
+  .btn { display: inline-flex; align-items: center; gap: 16px; padding: 18px 34px; border-radius: 18px; text-decoration: none; color: #1b1407; font-weight: 700; font-size: 22px;
+         background: linear-gradient(180deg, #f3d387, #c6963a); box-shadow: 0 14px 30px rgba(214,170,90,.35), inset 0 1px 0 rgba(255,255,255,.6); }
+  .btn img { width: 46px; height: 46px; border-radius: 10px; }
+  .btn small { display: block; font-size: 13px; font-weight: 500; opacity: .75; }
+  .meta { color: var(--mut); font-size: 14px; margin-top: 12px; }
+  h1 { font-family: "Cormorant Garamond", Georgia, serif; font-size: 48px; line-height: 1.1; margin: 30px 0 8px; color: #f6e6bd; text-align: center; }
+  h2 { font-family: "Cormorant Garamond", Georgia, serif; font-size: 36px; color: #f6e6bd; margin: 56px 0 14px; }
+  p, li { text-align: justify; }
+  .lead { text-align: center; color: #c9d3e8; font-size: 19px; max-width: 760px; margin: 0 auto; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 18px; }
+  .card h3 { margin: 0 0 6px; font-size: 17px; }
+  .card p { margin: 0; color: var(--mut); font-size: 14.5px; text-align: left; }
+  .steps { counter-reset: s; list-style: none; padding: 0; }
+  .steps li { counter-increment: s; position: relative; padding: 4px 0 14px 50px; }
+  .steps li::before { content: counter(s); position: absolute; left: 0; top: 2px; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center;
+                      background: rgba(214,170,90,.18); border: 1px solid rgba(214,170,90,.45); color: var(--gold); font-weight: 700; }
+  .shots { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .shots figure { margin: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 10px; }
+  .shots img { width: 100%; border-radius: 8px; display: block; }
+  .shots figcaption { color: var(--mut); font-size: 14px; padding: 10px 4px 2px; text-align: left; }
+  .shots figcaption b { color: var(--fg); }
+  table { width: 100%; border-collapse: collapse; }
+  td { border-top: 1px solid var(--line); padding: 9px 8px; vertical-align: top; }
+  td:first-child { color: var(--mut); width: 190px; }
+  .about { display: grid; grid-template-columns: 120px 1fr; gap: 22px; align-items: start; }
+  .about img { width: 120px; }
+  footer { border-top: 1px solid var(--line); margin-top: 60px; padding: 26px 0 40px; color: var(--mut); font-size: 13.5px; }
+  @media (max-width: 800px) { .grid, .shots { grid-template-columns: 1fr; } h1 { font-size: 36px; } .about { grid-template-columns: 1fr; } nav a { display: none; } .btn { font-size: 18px; padding: 14px 20px; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav><img src="img/icon.png" alt=""><b>Patra's Law Chambers</b><span class="sp"></span>
+      <a href="#features">Features</a><a href="#install">Install</a><a href="#use">Using it</a><a href="#about">About</a>
+      <a href="https://github.com/advocatesudippatra-spec/calcutta-high-court-case-monitor-mac">GitHub</a></nav>
+    <div class="hero"><img src="img/hero.png" alt="Calcutta High Court Case Monitor for Mac"></div>
+    <h1>Calcutta High Court Case Monitor</h1>
+    <p class="lead">Your cause list, the live display board and every alert, right in your Mac's menu bar. Know when your matter will be reached, before you leave for court.</p>
+    <div class="cta">
+      <a class="btn" href="https://github.com/advocatesudippatra-spec/calcutta-high-court-case-monitor-mac/raw/main/Calcutta-High-Court-Case-Monitor.dmg">
+        <img src="img/icon.png" alt=""><span>Download for Mac<small>Version 1.0 · free</small></span></a>
+      <div class="meta">macOS 14 Sonoma or later · Apple silicon and Intel · about 2.5 MB</div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <h2 id="features">What it does</h2>
+  <p>Every night the app reads the Calcutta High Court's cause lists, finds your matters, and works out how likely each one is to be reached, from the Bench's determination, its notes and the day's timetable. In the morning it reminds you. At about 10:15 it opens the official display board inside the app, watches it, and rings your phone when your item is near.</p>
+  <div class="grid">
+    <div class="card"><h3>📋 Nightly analysis</h3><p>Daily, supplementary and monthly lists: every matter with its chance of being reached, and why.</p></div>
+    <div class="card"><h3>📺 Built-in display board</h3><p>The official board runs inside the app with the Board Watcher. No Chrome, no extension.</p></div>
+    <div class="card"><h3>🔔 Telegram and alarms</h3><p>Heads-up at night, morning reminders, a loud alarm when your item is near or its heading closes.</p></div>
+    <div class="card"><h3>🔐 CAPTCHA on your phone</h3><p>The board's CAPTCHA picture comes to Telegram. Reply with the letters and the app types them in.</p></div>
+    <div class="card"><h3>✨ AI assistant</h3><p>Ask anything in plain words, typed or spoken: Moonshot, DeepSeek, Gemini, OpenAI or Claude, with your own key.</p></div>
+    <div class="card"><h3>🗓️ Roster and notices</h3><p>Roster changes, modified determinations, early-rising and holiday notices that concern your courts.</p></div>
+    <div class="card"><h3>🕘 Your schedule</h3><p>Choose when each heads-up, report, reminder and digest comes.</p></div>
+    <div class="card"><h3>🗄️ Your database</h3><p>Every list, board reading and notice kept on your Mac, with a calendar to clear old data.</p></div>
+    <div class="card"><h3>⚙️ Five-minute setup</h3><p>A step-by-step window does everything. No Terminal.</p></div>
+  </div>
+
+  <h2 id="install">Install in three steps</h2>
+  <ol class="steps">
+    <li><b>Download</b> the app with the button above and open the downloaded file.</li>
+    <li><b>Drag</b> <i>Calcutta High Court Case Monitor</i> into the <b>Applications</b> folder.</li>
+    <li><b>Open it</b> from Applications. The first time, macOS says it cannot check the app, because it is not sold through Apple. Open <b>System Settings → Privacy &amp; Security</b>, scroll down and click <b>Open Anyway</b> next to the app's name, then <b>Open</b>. This is needed only once.</li>
+  </ol>
+  <p>The setup window then opens by itself. Look for the <b>courthouse icon</b> in the menu bar at the top of the screen: everything is there. You need a Mac that is on during court hours, Telegram on your phone, and, if you like, the ntfy app (Android) or Pushover (iPhone) for loud alarms and an AI key.</p>
+
+  <h2 id="use">Setting up and using it</h2>
+  <div class="shots">
+    <figure><img src="img/screens/setup-welcome.jpg" alt="Setup: welcome"><figcaption><b>Setup.</b> Name → Telegram → phone alarms → lists → this Mac → AI → Install and start.</figcaption></figure>
+    <figure><img src="img/screens/setup-mac.jpg" alt="Setup: this Mac"><figcaption><b>This Mac.</b> The board opens by itself at 10:15; the app starts at login.</figcaption></figure>
+    <figure><img src="img/screens/board.jpg" alt="Display board"><figcaption><b>Display Board.</b> The official board with the Board Watcher running inside. Closing the window keeps it watching.</figcaption></figure>
+    <figure><img src="img/screens/chat.jpg" alt="Chat"><figcaption><b>Chat.</b> Ask about your matters, courts, judges and notices; follow a court; set a reminder; or speak.</figcaption></figure>
+    <figure><img src="img/screens/schedule.jpg" alt="Schedule"><figcaption><b>Schedule.</b> When each message comes.</figcaption></figure>
+    <figure><img src="img/screens/setup-ai.jpg" alt="AI assistant"><figcaption><b>AI assistant.</b> Pick the service and paste your key; it stays in your Mac's Keychain.</figcaption></figure>
+  </div>
+  <p><b>Today</b> shows your matters for the day with the Bench, what is on the board now and the full report. <b>Database</b> shows what is stored and clears old data by date (a backup is made first). <b>Settings</b> holds everything from the setup, plus pause alerts, logs and updates. On Telegram you can ask the same questions, send notices as text, photo or PDF, and reply to the board's CAPTCHA picture.</p>
+
+  <h2>Privacy</h2>
+  <p>Everything stays on your Mac. The app reads only the Calcutta High Court's public cause lists, notices and display board. Messages go only to your own Telegram bot and alarm app, and questions only to the AI service you choose, with your own key. The display board's CAPTCHA is always typed by you. Quitting the app does not stop your alerts: the background checks keep running.</p>
+
+  <h2 id="about">About</h2>
+  <div class="about">
+    <img src="img/icon.png" alt="Patra's Law Chambers">
+    <div>
+      <p>Designed and built by <b>Advocate Sudip Patra</b>, Founder &amp; Managing Partner, <b>Patra's Law Chambers</b>: a litigation practice in Kolkata and New Delhi, before the Supreme Court of India, the Calcutta High Court and tribunals including the CAT, AFT, DRT/DRAT and NCLT.</p>
+      <table>
+        <tr><td>Kolkata</td><td>NICCO House, 6th Floor, 2 Hare Street, Kolkata 700001</td></tr>
+        <tr><td>New Delhi</td><td>4455/5, 1st Floor, Gali Shahid Bhagat Singh, Paharganj, New Delhi 110055</td></tr>
+        <tr><td>Phone / WhatsApp</td><td><a href="https://wa.me/918902224444">+91 890 222 4444</a></td></tr>
+        <tr><td>Website</td><td><a href="https://patraslawchambers.com/">patraslawchambers.com</a> · <a href="https://patraslawchambers.com/about-us/">About us</a> · <a href="https://patraslawchambers.com/contact-us/">Contact</a></td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="cta">
+    <a class="btn" href="https://github.com/advocatesudippatra-spec/calcutta-high-court-case-monitor-mac/raw/main/Calcutta-High-Court-Case-Monitor.dmg">
+      <img src="img/icon.png" alt=""><span>Download for Mac<small>Version 1.0 · free</small></span></a>
+  </div>
+</main>
+<footer><div class="wrap">Free to use under the MIT Licence © 2026 Sudip Patra, Patra's Law Chambers. No warranty. Chances are estimates from the cause list and the Bench's notes, not legal advice or a prediction by the Court. Not affiliated with the Calcutta High Court. · <a href="https://advocatesudippatra-spec.github.io/calcutta-high-court-case-monitoring-system/">Full manual</a></div></footer>
+</body>
+</html>
