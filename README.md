@@ -9,6 +9,9 @@ A free app for advocates practising before the Calcutta High Court, by Patra's L
 
 <a href="https://github.com/advocatesudippatra-spec/calcutta-high-court-case-monitor-mac/raw/main/Calcutta-High-Court-Case-Monitor.dmg"><img src="docs/img/download-button.png" alt="Download for Mac" width="460"></a>
 
+
+[![Share on WhatsApp](https://img.shields.io/badge/Share%20on-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/?text=%E2%9A%96%EF%B8%8F%20%2ACalcutta%20High%20Court%20Case%20Monitor%20for%20Mac%2A%20%28free%20app%20for%20advocates%29%0ANightly%20cause-list%20analysis%2C%20chances%20of%20your%20matter%20being%20reached%2C%20the%20live%20display%20board%20with%20phone%20alarms%2C%20and%20an%20AI%20assistant.%20Download%3A%20https%3A//advocatesudippatra-spec.github.io/calcutta-high-court-case-monitor-mac/) [![Share on Facebook](https://img.shields.io/badge/Share%20on-Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fadvocatesudippatra-spec.github.io%2Fcalcutta-high-court-case-monitor-mac%2F)
+
 Version 1.0 · macOS 14 Sonoma or later · Apple silicon and Intel · Free<br>
 [Web page](https://advocatesudippatra-spec.github.io/calcutta-high-court-case-monitor-mac/) · [Full manual](https://advocatesudippatra-spec.github.io/calcutta-high-court-case-monitoring-system/) · [Monitoring program (open source)](https://github.com/advocatesudippatra-spec/calcutta-high-court-case-monitoring-system)
 
@@ -125,6 +128,8 @@ the CAT, AFT, DRT/DRAT and NCLT.
 <div align="center">
 
 <a href="https://github.com/advocatesudippatra-spec/calcutta-high-court-case-monitor-mac/raw/main/Calcutta-High-Court-Case-Monitor.dmg"><img src="docs/img/download-button.png" alt="Download for Mac" width="420"></a>
+
+[![Share on WhatsApp](https://img.shields.io/badge/Share%20on-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/?text=%E2%9A%96%EF%B8%8F%20%2ACalcutta%20High%20Court%20Case%20Monitor%20for%20Mac%2A%20%28free%20app%20for%20advocates%29%0ANightly%20cause-list%20analysis%2C%20chances%20of%20your%20matter%20being%20reached%2C%20the%20live%20display%20board%20with%20phone%20alarms%2C%20and%20an%20AI%20assistant.%20Download%3A%20https%3A//advocatesudippatra-spec.github.io/calcutta-high-court-case-monitor-mac/) [![Share on Facebook](https://img.shields.io/badge/Share%20on-Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fadvocatesudippatra-spec.github.io%2Fcalcutta-high-court-case-monitor-mac%2F)
 
 </div>
 
