@@ -1,0 +1,21 @@
+# Calcutta High Court Case Monitor for Mac
+
+> Free macOS menu-bar app for advocates practising before the Calcutta High Court, by Patra's Law Chambers (Kolkata and New Delhi). It reads the Court's cause lists every night, finds the advocate's matters and estimates how likely each is to be reached; during court hours it watches the official display board inside the app and alerts the advocate's phone when the item is near.
+
+- Website: https://advocatesudippatra-spec.github.io/calcutta-high-court-case-monitor-mac/
+- Download (DMG, version 1.0, about 2.5 MB, macOS 14 or later, Apple silicon and Intel): https://github.com/advocatesudippatra-spec/calcutta-high-court-case-monitor-mac/raw/main/Calcutta-High-Court-Case-Monitor.dmg
+- GitHub: https://github.com/advocatesudippatra-spec/calcutta-high-court-case-monitor-mac
+- Monitoring program (open source) and full manual: https://github.com/advocatesudippatra-spec/calcutta-high-court-case-monitoring-system · https://advocatesudippatra-spec.github.io/calcutta-high-court-case-monitoring-system/
+
+## What it does
+- Nightly analysis of the Appellate Side (and Original Side / Jalpaiguri on request): daily, supplementary and monthly lists; chance of each matter being reached with the reason (heading, determination, Bench note timetable, fixed items, pace).
+- Display board inside the app with the Board Watcher; phone alarm when the item is near or its heading closes; follow a court item by item.
+- The board's CAPTCHA picture is sent to the advocate's Telegram; the advocate replies and the app types it. The CAPTCHA is never solved automatically.
+- Roster changes, modified determinations, early-rising and holiday notices concerning the advocate's courts.
+- AI assistant in the app and on Telegram, typed or spoken (Moonshot default; DeepSeek, Gemini, OpenAI, Claude; own API key kept in the Keychain).
+- Adjustable schedule, local database with date-wise trimming, step-by-step setup, start at login.
+
+## Facts
+- Price: free (MIT Licence). Platform: macOS 14+. Alerts via the user's own Telegram bot; loud alarms via ntfy (Android) or Pushover (iPhone).
+- Data stays on the Mac. Not affiliated with the Calcutta High Court.
+- Contact: Patra's Law Chambers, NICCO House, 6th Floor, 2 Hare Street, Kolkata 700001; +91 890 222 4444; https://patraslawchambers.com/
