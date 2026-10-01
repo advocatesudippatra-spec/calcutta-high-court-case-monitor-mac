@@ -75,7 +75,7 @@ monitoring program, starts the background checks and sends a test message to you
 ## Using the app
 
 <table><tr>
-<td width="50%"><img src="docs/img/screens/board.jpg" alt="Display board inside the app"></td>
+<td width="50%"><img src="docs/img/screens/display-board.jpg" alt="Display board inside the app"></td>
 <td width="50%"><img src="docs/img/screens/chat.jpg" alt="Chat with the assistant"></td>
 </tr><tr>
 <td><b>Display Board.</b> The official board inside the app, with the Board Watcher running. Closing the window keeps it watching.</td>
