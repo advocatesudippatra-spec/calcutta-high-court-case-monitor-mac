@@ -33,7 +33,7 @@ app.
 | 📺 **Built-in display board** | The official board opens in the app with the Board Watcher running inside: no Chrome, no extension |
 | 🔔 **Telegram and loud phone alarms** | Heads-up at night, reminders in the morning, an alarm when your item is near or its heading closes |
 | 🔐 **CAPTCHA on your phone** | The board's CAPTCHA picture comes to Telegram; reply with the letters and the app types them in |
-| ✨ **AI assistant** | Ask anything in plain words, typed or spoken, in the app or on Telegram (Moonshot, DeepSeek, Gemini, OpenAI or Claude, your own key) |
+| ✨ **AI assistant** | Ask anything in plain words, typed or spoken, in the app or on Telegram (Moonshot, DeepSeek, Gemini, OpenAI or Claude, your own key). Pick the model from the service's own list; if one service fails, the next one with a key answers |
 | 🗓️ **Roster, notices and holidays** | Roster changes, modified determinations, early-rising and holiday notices that concern your courts |
 | 🕘 **Your own schedule** | Choose when each message comes |
 | 🗄️ **Your own database** | Every list, board reading and notice kept on your Mac, with a calendar to clear old data |
